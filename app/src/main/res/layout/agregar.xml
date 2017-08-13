@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/one">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Joel Ludeña"
+        android:id="@+id/txtMsg"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Crear Contacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Ingresar Nombre"
+        android:ems="10"
+        android:id="@+id/txtNombreAgr"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/txtMsg"
+        android:layout_toEndOf="@+id/txtMsg"
+        android:layout_marginTop="36dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Ingresar Teléfono"
+        android:ems="10"
+        android:layout_below="@+id/txtNombreAgr"
+        android:layout_alignLeft="@+id/txtNombreAgr"
+        android:layout_alignStart="@+id/txtNombreAgr"
+        android:layout_marginTop="40dp"
+        android:id="@+id/txtNumCrear"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <TextView
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView5"
+        android:background="@drawable/telefono"
+        android:layout_alignTop="@+id/txtNumCrear"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView4"
+        android:background="@drawable/nombre"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_alignTop="@+id/txtNombreAgr"
+        android:layout_toLeftOf="@+id/txtNombreAgr"
+        android:layout_toStartOf="@+id/txtNombreAgr" />
+
+    <TextView
+        android:text="Regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/btnRegresarCrear"
+        android:layout_alignStart="@+id/btnRegresarCrear" />
+
+    <TextView
+        android:text="Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignRight="@+id/btnGuardarCrear"
+        android:layout_alignEnd="@+id/btnGuardarCrear"
+        android:layout_below="@+id/btnRegresarCrear" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/save"
+        android:id="@+id/btnGuardarCrear"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/txtNumCrear"
+        android:layout_alignLeft="@+id/txtNumCrear"
+        android:layout_alignStart="@+id/txtNumCrear" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/home"
+        android:id="@+id/btnRegresarCrear"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBottom="@+id/btnGuardarCrear"
+        android:layout_alignRight="@+id/txtNumCrear"
+        android:layout_alignEnd="@+id/txtNumCrear"
+        android:layout_alignTop="@+id/btnGuardarCrear" />
+    />
+
+
+</RelativeLayout>

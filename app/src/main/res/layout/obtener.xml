@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/one">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Joel Ludeña"
+        android:id="@+id/txtMsg"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Obtener Contacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Ingresar Nombre"
+        android:ems="10"
+        android:id="@+id/txtNombreObt"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/txtMsg"
+        android:layout_toEndOf="@+id/txtMsg"
+        android:layout_marginTop="36dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-smallcaps" />
+
+    <TextView
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView5"
+        android:background="@drawable/telefono"
+        android:layout_alignTop="@+id/txtNumObt"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView4"
+        android:background="@drawable/nombre"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_alignTop="@+id/txtNombreObt"
+        android:layout_toLeftOf="@+id/txtNombreObt"
+        android:layout_toStartOf="@+id/txtNombreObt" />
+
+    <TextView
+        android:text="Regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/btnRegresarOBTC"
+        android:layout_alignStart="@+id/btnRegresarOBTC" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:id="@+id/txtNumObt"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:enabled="false"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/txtNombreObt"
+        android:layout_alignLeft="@+id/txtNombreObt"
+        android:layout_alignStart="@+id/txtNombreObt"
+        android:layout_alignRight="@+id/txtNombreObt"
+        android:layout_alignEnd="@+id/txtNombreObt" />
+
+    <TextView
+        android:text="Obtener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_below="@+id/btnRegresarOBTC"
+        android:layout_alignLeft="@+id/btnObtenerContObt"
+        android:layout_alignStart="@+id/btnObtenerContObt" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/find"
+        android:id="@+id/btnObtenerContObt"
+        android:layout_above="@+id/textView6"
+        android:layout_alignLeft="@+id/txtNumObt"
+        android:layout_alignStart="@+id/txtNumObt" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/home"
+        android:id="@+id/btnRegresarOBTC"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/txtNumObt"
+        android:layout_alignRight="@+id/txtNumObt"
+        android:layout_alignEnd="@+id/txtNumObt"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+</RelativeLayout>
